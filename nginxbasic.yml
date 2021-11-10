@@ -1,0 +1,16 @@
+---
+- name: install and start nginx
+  hosts: webservers
+  become: yes
+  become-user: ansibleuser
+
+  tasks:
+    - name: install latest nginx package 
+	   yum:
+  	     name: nginx
+  	     state: latest
+
+    - name: start httpd  
+      service:
+        name: nginx
+        state: started

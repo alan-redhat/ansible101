@@ -1,0 +1,24 @@
+---
+- name: install and start nginx
+  hosts: webservers
+  become: yes
+  become-user: ansibleuser
+
+  tasks:
+    - name: install latest nginx package 
+	   yum:
+  	     name: nginx
+  	     state: latest
+
+- name: add db admin user
+  hosts: dbservers
+  become: yes
+  become-user: ansibleuser
+  
+  tasks:
+    - name: add dbdmin user
+      user:
+      name: dbadmin
+      comment: database admin
+      uid: 1040
+      group: admin
