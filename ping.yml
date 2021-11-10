@@ -1,0 +1,9 @@
+---
+- name: ping host
+  hosts: toby
+  become: yes
+  become_user: ansibleuser
+
+  tasks: 
+    - name: ping a server
+      ping: 
