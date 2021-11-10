@@ -1,0 +1,19 @@
+---
+- name: install and start nginx
+  hosts: webservers
+  become: yes
+  become-user: ansibleuser
+  vars_files: 
+      vars/packages.yml
+	
+
+  tasks:
+    - name: install latest nginx package 
+	   yum:
+  	     name: {{ packagename }}  
+  	     state: latest
+
+    - name: start service 
+      service:
+        name: {{ packagename }}
+        state: started
