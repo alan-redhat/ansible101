@@ -5,5 +5,5 @@
   become_user: ansibleuser
 
   tasks: 
-    - name: ping a server
+    - name: ping toby server
       ping: 
