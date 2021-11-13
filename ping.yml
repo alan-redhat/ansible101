@@ -1,9 +1,9 @@
 ---
 - name: ping host
-  hosts: toby
+  hosts: ansible101ds1
   become: yes
   become_user: ansibleuser
 
   tasks: 
-    - name: ping toby node
+    - name: ping ansible101ds1 node
       ping: 
