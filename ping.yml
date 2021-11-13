@@ -5,5 +5,5 @@
   become_user: ansibleuser
 
   tasks: 
-    - name: ping ansible101ds1 node
+    - name: ping ansible101ds1 system
       ping: 
