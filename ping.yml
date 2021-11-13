@@ -1,9 +1,9 @@
 ---
 - name: ping host
-  hosts: ansible101ds1
+  hosts: everest
   become: yes
-  become_user: ansibleuser
+  become_user: root
 
   tasks: 
-    - name: ping ansible101ds1 node
+    - name: ping everest node
       ping: 
