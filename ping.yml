@@ -1,6 +1,6 @@
 ---
 - name: ping host
-  hosts: ansible101ds1
+  hosts: 192.168.122.186
   become: yes
   become_user: root
 
