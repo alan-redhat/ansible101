@@ -5,5 +5,5 @@
   become_user: root
 
   tasks: 
-    - name: ping ansible101ds1 test
+    - name: ping ansible101ds1 exam 
       ping: 
