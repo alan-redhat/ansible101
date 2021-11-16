@@ -1,6 +1,6 @@
 ---
 - name: ping host
-  hosts: all
+  hosts: webservers
   
   tasks: 
     - name: ping machines
