@@ -1,9 +1,7 @@
 ---
 - name: ping host
-  hosts: 192.168.122.186
-  become: yes
-  become_user: root
-
+  hosts: all
+  
   tasks: 
-    - name: ping ansible101ds1 exam 
+    - name: ping machines
       ping: 

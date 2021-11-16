@@ -1,9 +1,7 @@
 ---
 - name: install and start nginx
-  hosts: webservers
-  become: yes
-  become-user: ansibleuser
-
+  hosts: all
+  
   tasks:
     - name: install latest nginx package 
 	   yum:
