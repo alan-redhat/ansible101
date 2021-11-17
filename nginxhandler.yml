@@ -1,5 +1,5 @@
 - name: install and start nginx
-  hosts: njdcsrv1 
+  hosts: webservers
   tasks:
          - name: Install nginx
            package:
