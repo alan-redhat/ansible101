@@ -1,6 +1,6 @@
 ---
 - name: Get ping response
-  hosts: server1
+  hosts: all
     #  become: true
     #  become_user: aleberkn
 
