@@ -1,0 +1,15 @@
+---
+- name: Get ping response
+  hosts: server1
+    #  become: true
+    #  become_user: aleberkn
+
+  tasks:
+    - name: ping
+      ping:
+      register: result
+
+    - name: print result
+      debug:
+        msg: "{{ result }}"
+~                           
